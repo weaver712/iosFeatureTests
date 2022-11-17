@@ -1,4 +1,5 @@
 import SwiftUI
+import FamilyControls
 
 struct ContentView: View {
     @State private var isDiscouragedPresented = false
@@ -19,15 +20,28 @@ struct ContentView: View {
                 isDiscouragedPresented = true
             }
             .familyActivityPicker(isPresented: $isDiscouragedPresented, selection: $model.selectionToDiscourage)
+            .onChange(of: model.selectionToDiscourage) { newSelection in
+                model.setShieldRestrictions()
+            }
             
-            Button("Select Apps to Encourage") {
+            Button("Select Apps to monitor") {
                 isEncouragedPresented = true
             }
             .familyActivityPicker(isPresented: $isEncouragedPresented, selection: $model.selectionToEncourage)
+            .onChange(of: model.selectionToEncourage) { newSelection in
+                MySchedule.setSchedule()
+            }
+            
+            Button("monitor all apps", action: {
+                model.selectionToEncourage = FamilyActivitySelection()
+                MySchedule.setSchedule()
+            })
+            
+            Button("Stop monitor", action: {
+                MySchedule.unsetSchedule()
+            })
         }
-        .onChange(of: model.selectionToDiscourage) { newSelection in
-            MyModel.shared.setShieldRestrictions()
-        }
+
     }
 }
 

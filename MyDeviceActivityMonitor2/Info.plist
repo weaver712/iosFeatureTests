@@ -7,7 +7,7 @@
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.deviceactivity.monitor-extension</string>
 		<key>NSExtensionPrincipalClass</key>
-		<string>$(PRODUCT_MODULE_NAME).MyDeviceActivityMonitor</string>
+		<string>$(PRODUCT_MODULE_NAME).MyDeviceActivityMonitor2</string>
 	</dict>
 </dict>
 </plist>

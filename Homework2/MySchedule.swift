@@ -16,30 +16,49 @@ extension DeviceActivityEvent.Name {
 // The Device Activity schedule represents the time bounds in which my extension will monitor for activity
 let schedule = DeviceActivitySchedule(
     // I've set my schedule to start and end at midnight
-    intervalStart: DateComponents(hour: 0, minute: 0),
-    intervalEnd: DateComponents(hour: 11, minute: 17),
+    intervalStart: DateComponents(hour: 15, minute: 08),
+    intervalEnd: DateComponents(hour: 16, minute: 08),
     // I've also set the schedule to repeat
-    repeats: true
+    repeats: false,
+    warningTime: nil
 )
 
 class MySchedule {
+    static public func unsetSchedule() {
+        let center = DeviceActivityCenter()
+        print("center.avtivities:\(center.activities)")
+        if center.activities.isEmpty {
+            return
+        }
+        center.stopMonitoring(center.activities)
+        print("center.avtivities:\(center.activities)")
+    }
+    
     static public func setSchedule() {
-        print("Setting schedule...")
-        print("Hour is: ", Calendar.current.dateComponents([.hour, .minute], from: Date()).hour!)
-
+        let applications = MyModel.shared.selectionToEncourage
+        if applications.applicationTokens.isEmpty {
+            print("empty applicationTokens")
+        }
+        if applications.categoryTokens.isEmpty {
+            print("empty categoryTokens")
+        }
+        
         let events: [DeviceActivityEvent.Name: DeviceActivityEvent] = [
             .encouraged: DeviceActivityEvent(
-                applications: MyModel.shared.selectionToEncourage.applicationTokens,
-                threshold: DateComponents(minute: 5)
+                applications: applications.applicationTokens,
+                categories: applications.categoryTokens,
+                threshold: DateComponents(minute: 1)
             )
         ]
         
         // Create a Device Activity center
         let center = DeviceActivityCenter()
         do {
-            print("Try to start monitoring...")
             // Call startMonitoring with the activity name, schedule, and events
+            print("center.avtivities:\(center.activities)")
+            print("Try to start monitoring...")
             try center.startMonitoring(.daily, during: schedule, events: events)
+            print("monitoring...")
         } catch {
             print("Error monitoring schedule: ", error)
         }

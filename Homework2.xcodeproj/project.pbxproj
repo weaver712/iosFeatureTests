@@ -7,44 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9915EAAD26E2DED300A00692 /* MyDeviceActivityMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9915EAAC26E2DED300A00692 /* MyDeviceActivityMonitor.swift */; };
-		9915EAB126E2DED300A00692 /* MyDeviceActivityMonitor.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9915EAAA26E2DED300A00692 /* MyDeviceActivityMonitor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9964EA7626E29975007000D1 /* MySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9964EA7526E29975007000D1 /* MySchedule.swift */; };
 		9964EA7826E29DB7007000D1 /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9964EA7726E29DB7007000D1 /* MyModel.swift */; };
 		99EE9DAE26E2694100F0FB9C /* Homework2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EE9DAD26E2694100F0FB9C /* Homework2App.swift */; };
 		99EE9DB026E2694100F0FB9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EE9DAF26E2694100F0FB9C /* ContentView.swift */; };
 		99EE9DB226E2694300F0FB9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99EE9DB126E2694300F0FB9C /* Assets.xcassets */; };
 		99EE9DB526E2694300F0FB9C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99EE9DB426E2694300F0FB9C /* Preview Assets.xcassets */; };
+		B42ACC352925070C0041C26A /* CallDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42ACC342925070C0041C26A /* CallDirectoryHandler.swift */; };
+		B42ACC392925070C0041C26A /* MyDeviceActivityMonitor2.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B42ACC322925070C0041C26A /* MyDeviceActivityMonitor2.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B42ACC3E292507C10041C26A /* MyDeviceActivityMonitor2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42ACC3D292507C10041C26A /* MyDeviceActivityMonitor2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9915EAAF26E2DED300A00692 /* PBXContainerItemProxy */ = {
+		B42ACC372925070C0041C26A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 99EE9DA226E2694000F0FB9C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9915EAA926E2DED300A00692;
-			remoteInfo = MyDeviceActivityMonitor;
+			remoteGlobalIDString = B42ACC312925070C0041C26A;
+			remoteInfo = MyDeviceActivityMonitor2;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9964EA8926E2B10C007000D1 /* Embed App Extensions */ = {
+		9964EA8926E2B10C007000D1 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				9915EAB126E2DED300A00692 /* MyDeviceActivityMonitor.appex in Embed App Extensions */,
+				B42ACC392925070C0041C26A /* MyDeviceActivityMonitor2.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9915EAAA26E2DED300A00692 /* MyDeviceActivityMonitor.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyDeviceActivityMonitor.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		9915EAAC26E2DED300A00692 /* MyDeviceActivityMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDeviceActivityMonitor.swift; sourceTree = "<group>"; };
-		9915EAAE26E2DED300A00692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9964EA7526E29975007000D1 /* MySchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySchedule.swift; sourceTree = "<group>"; };
 		9964EA7726E29DB7007000D1 /* MyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyModel.swift; sourceTree = "<group>"; };
 		99EE9DAA26E2694000F0FB9C /* Homework2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,17 +51,22 @@
 		99EE9DB126E2694300F0FB9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99EE9DB426E2694300F0FB9C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		99EE9DBB26E26EE800F0FB9C /* Homework2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Homework2.entitlements; sourceTree = "<group>"; };
+		B42ACC322925070C0041C26A /* MyDeviceActivityMonitor2.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyDeviceActivityMonitor2.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B42ACC342925070C0041C26A /* CallDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDirectoryHandler.swift; sourceTree = "<group>"; };
+		B42ACC362925070C0041C26A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B42ACC3D292507C10041C26A /* MyDeviceActivityMonitor2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDeviceActivityMonitor2.swift; sourceTree = "<group>"; };
+		B42ACC3F2925088D0041C26A /* MyDeviceActivityMonitor2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyDeviceActivityMonitor2.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9915EAA726E2DED300A00692 /* Frameworks */ = {
+		99EE9DA726E2694000F0FB9C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		99EE9DA726E2694000F0FB9C /* Frameworks */ = {
+		B42ACC2F2925070C0041C26A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,20 +76,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9915EAAB26E2DED300A00692 /* MyDeviceActivityMonitor */ = {
-			isa = PBXGroup;
-			children = (
-				9915EAAC26E2DED300A00692 /* MyDeviceActivityMonitor.swift */,
-				9915EAAE26E2DED300A00692 /* Info.plist */,
-			);
-			path = MyDeviceActivityMonitor;
-			sourceTree = "<group>";
-		};
 		99EE9DA126E2694000F0FB9C = {
 			isa = PBXGroup;
 			children = (
 				99EE9DAC26E2694000F0FB9C /* Homework2 */,
-				9915EAAB26E2DED300A00692 /* MyDeviceActivityMonitor */,
+				B42ACC332925070C0041C26A /* MyDeviceActivityMonitor2 */,
 				99EE9DAB26E2694000F0FB9C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,7 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				99EE9DAA26E2694000F0FB9C /* Homework2.app */,
-				9915EAAA26E2DED300A00692 /* MyDeviceActivityMonitor.appex */,
+				B42ACC322925070C0041C26A /* MyDeviceActivityMonitor2.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,26 +116,20 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B42ACC332925070C0041C26A /* MyDeviceActivityMonitor2 */ = {
+			isa = PBXGroup;
+			children = (
+				B42ACC3F2925088D0041C26A /* MyDeviceActivityMonitor2.entitlements */,
+				B42ACC342925070C0041C26A /* CallDirectoryHandler.swift */,
+				B42ACC362925070C0041C26A /* Info.plist */,
+				B42ACC3D292507C10041C26A /* MyDeviceActivityMonitor2.swift */,
+			);
+			path = MyDeviceActivityMonitor2;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9915EAA926E2DED300A00692 /* MyDeviceActivityMonitor */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9915EAB226E2DED300A00692 /* Build configuration list for PBXNativeTarget "MyDeviceActivityMonitor" */;
-			buildPhases = (
-				9915EAA626E2DED300A00692 /* Sources */,
-				9915EAA726E2DED300A00692 /* Frameworks */,
-				9915EAA826E2DED300A00692 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MyDeviceActivityMonitor;
-			productName = MyDeviceActivityMonitor;
-			productReference = 9915EAAA26E2DED300A00692 /* MyDeviceActivityMonitor.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 		99EE9DA926E2694000F0FB9C /* Homework2 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99EE9DB826E2694300F0FB9C /* Build configuration list for PBXNativeTarget "Homework2" */;
@@ -149,17 +137,34 @@
 				99EE9DA626E2694000F0FB9C /* Sources */,
 				99EE9DA726E2694000F0FB9C /* Frameworks */,
 				99EE9DA826E2694000F0FB9C /* Resources */,
-				9964EA8926E2B10C007000D1 /* Embed App Extensions */,
+				9964EA8926E2B10C007000D1 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9915EAB026E2DED300A00692 /* PBXTargetDependency */,
+				B42ACC382925070C0041C26A /* PBXTargetDependency */,
 			);
 			name = Homework2;
 			productName = Homework2;
 			productReference = 99EE9DAA26E2694000F0FB9C /* Homework2.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B42ACC312925070C0041C26A /* MyDeviceActivityMonitor2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B42ACC3A2925070C0041C26A /* Build configuration list for PBXNativeTarget "MyDeviceActivityMonitor2" */;
+			buildPhases = (
+				B42ACC2E2925070C0041C26A /* Sources */,
+				B42ACC2F2925070C0041C26A /* Frameworks */,
+				B42ACC302925070C0041C26A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyDeviceActivityMonitor2;
+			productName = MyDeviceActivityMonitor2;
+			productReference = B42ACC322925070C0041C26A /* MyDeviceActivityMonitor2.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -168,14 +173,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1310;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
-					9915EAA926E2DED300A00692 = {
-						CreatedOnToolsVersion = 13.0;
-					};
 					99EE9DA926E2694000F0FB9C = {
 						CreatedOnToolsVersion = 13.0;
+					};
+					B42ACC312925070C0041C26A = {
+						CreatedOnToolsVersion = 14.0;
 					};
 				};
 			};
@@ -193,19 +198,12 @@
 			projectRoot = "";
 			targets = (
 				99EE9DA926E2694000F0FB9C /* Homework2 */,
-				9915EAA926E2DED300A00692 /* MyDeviceActivityMonitor */,
+				B42ACC312925070C0041C26A /* MyDeviceActivityMonitor2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9915EAA826E2DED300A00692 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		99EE9DA826E2694000F0FB9C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,17 +213,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		9915EAA626E2DED300A00692 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+		B42ACC302925070C0041C26A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9915EAAD26E2DED300A00692 /* MyDeviceActivityMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
 		99EE9DA626E2694000F0FB9C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -237,69 +234,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B42ACC2E2925070C0041C26A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B42ACC3E292507C10041C26A /* MyDeviceActivityMonitor2.swift in Sources */,
+				B42ACC352925070C0041C26A /* CallDirectoryHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9915EAB026E2DED300A00692 /* PBXTargetDependency */ = {
+		B42ACC382925070C0041C26A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9915EAA926E2DED300A00692 /* MyDeviceActivityMonitor */;
-			targetProxy = 9915EAAF26E2DED300A00692 /* PBXContainerItemProxy */;
+			target = B42ACC312925070C0041C26A /* MyDeviceActivityMonitor2 */;
+			targetProxy = B42ACC372925070C0041C26A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		9915EAB326E2DED300A00692 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 47C966XSTJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyDeviceActivityMonitor/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = MyDeviceActivityMonitor;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.garrett-harris.adam.Homework2.MyDeviceActivityMonitor";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		9915EAB426E2DED300A00692 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 47C966XSTJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyDeviceActivityMonitor/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = MyDeviceActivityMonitor;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.garrett-harris.adam.Homework2.MyDeviceActivityMonitor";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		99EE9DB626E2694300F0FB9C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -423,10 +377,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Homework2/Homework2.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Homework2/Preview Content\"";
-				DEVELOPMENT_TEAM = 47C966XSTJ;
+				DEVELOPMENT_TEAM = L3YWJLFJQ8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Homework2/Info.plist;
@@ -441,8 +396,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.garrett-harris.adam.Homework2";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.motionz.homework2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -456,10 +412,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Homework2/Homework2.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Homework2/Preview Content\"";
-				DEVELOPMENT_TEAM = 47C966XSTJ;
+				DEVELOPMENT_TEAM = L3YWJLFJQ8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Homework2/Info.plist;
@@ -474,8 +431,67 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.garrett-harris.adam.Homework2";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.motionz.homework2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B42ACC3B2925070C0041C26A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = MyDeviceActivityMonitor2/MyDeviceActivityMonitor2.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L3YWJLFJQ8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyDeviceActivityMonitor2/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyDeviceActivityMonitor2;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.motionz.homework2.MyDeviceActivityMonitor2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B42ACC3C2925070C0041C26A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = MyDeviceActivityMonitor2/MyDeviceActivityMonitor2.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L3YWJLFJQ8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyDeviceActivityMonitor2/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyDeviceActivityMonitor2;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.motionz.homework2.MyDeviceActivityMonitor2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -485,15 +501,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9915EAB226E2DED300A00692 /* Build configuration list for PBXNativeTarget "MyDeviceActivityMonitor" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9915EAB326E2DED300A00692 /* Debug */,
-				9915EAB426E2DED300A00692 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		99EE9DA526E2694000F0FB9C /* Build configuration list for PBXProject "Homework2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -508,6 +515,15 @@
 			buildConfigurations = (
 				99EE9DB926E2694300F0FB9C /* Debug */,
 				99EE9DBA26E2694300F0FB9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B42ACC3A2925070C0041C26A /* Build configuration list for PBXNativeTarget "MyDeviceActivityMonitor2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B42ACC3B2925070C0041C26A /* Debug */,
+				B42ACC3C2925070C0041C26A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,6 +1,7 @@
 import SwiftUI
 import FamilyControls
 import ManagedSettings
+import DeviceActivity
 
 // Homework demo app
 // 1. Shield discouraged apps
@@ -34,13 +35,39 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         // This will prompt with an alert the first time the app launches
         // If a guardian has already approved Family Controls, it will silently return success
         // To prevent misuse, requestAuthorization will return failure if the signed-in iCloud is not a child using Family Sharing
-        AuthorizationCenter.shared.requestAuthorization { result in
-            // The request can either result in success or failure
-            switch result {
-            case .success():
-                break
-            case .failure(let error):
-                print("Error for Family Controls: \(error)")
+//        AuthorizationCenter.shared.requestAuthorization { result in
+//            // The request can either result in success or failure
+//            switch result {
+//            case .success():
+//                break
+//            case .failure(let error):
+//                print("Error for Family Controls: [\(error)]")
+//            }
+//        }
+        
+        Task {
+            do {
+                if #available(iOS 16.0, *) {
+                    print("try requestAuthorization")
+                    try await AuthorizationCenter.shared.requestAuthorization(for: FamilyControlsMember.individual)
+                    print("requestAuthorization success")
+                    
+                    switch AuthorizationCenter.shared.authorizationStatus {
+                    case .notDetermined:
+                        print("not determined")
+                    case .denied:
+                        print("denied")
+                    case .approved:
+                        print("approved")
+                    @unknown default:
+                        break
+                    }
+                   
+                } else {
+                    // Fallback on earlier versions
+                }
+            } catch {
+                print("Error requestAuthorization: ", error)
             }
         }
         // Once authorized:
@@ -50,7 +77,6 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         
         // 2a See MyMonitor.swift
         // 2b From the main app, I need to create a Device Activity name and a Device Activity schedule
-        MySchedule.setSchedule()
         
         return true
     }
